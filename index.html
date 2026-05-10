@@ -98,55 +98,6 @@ body::before{
   }
 }
 
-/* LOGO */
-
-.logo{
-  width:100%;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-
-  margin-top:15px;
-  margin-bottom:20px;
-}
-
-.logo img{
-
-  width:240px;
-  max-width:90%;
-
-  display:block;
-
-  border-radius:28px;
-
-  object-fit:cover;
-
-  background:rgba(255,255,255,.03);
-
-  border:1px solid rgba(255,255,255,.06);
-
-  box-shadow:
-  0 0 25px rgba(124,77,255,.25),
-  0 10px 40px rgba(0,0,0,.45);
-
-  animation:logoFloat 4s ease-in-out infinite;
-}
-
-@keyframes logoFloat{
-
-  0%{
-    transform:translateY(0px);
-  }
-
-  50%{
-    transform:translateY(-8px);
-  }
-
-  100%{
-    transform:translateY(0px);
-  }
-}
-
 /* Cards */
 
 .card{
@@ -234,41 +185,6 @@ body::before{
 
   box-shadow:
   0 0 20px rgba(124,77,255,.45);
-}
-
-/* Preview Images */
-
-.preview{
-
-  width:100%;
-
-  margin-top:16px;
-
-  border-radius:22px;
-
-  display:block;
-
-  border:1px solid rgba(255,255,255,.05);
-
-  box-shadow:
-  0 10px 30px rgba(0,0,0,.4);
-
-  animation:floatImg 4s ease-in-out infinite;
-}
-
-@keyframes floatImg{
-
-  0%{
-    transform:translateY(0);
-  }
-
-  50%{
-    transform:translateY(-6px);
-  }
-
-  100%{
-    transform:translateY(0);
-  }
 }
 
 /* Progress */
@@ -390,10 +306,6 @@ body::before{
 
 @media(max-width:600px){
 
-  .logo img{
-    width:190px;
-  }
-
   .message{
     font-size:15px;
   }
@@ -412,14 +324,6 @@ body::before{
 
 <div class="screen active" id="home">
 
-  <!-- YOUR LOGO -->
-
-  <div class="logo">
-    <img
-    src="https://i.supaimg.com/2a1ec0a4-961a-4ad4-9ec0-c13b367ba0d2/e7ff3e77-4155-4b44-bcb4-61c77e1b5384.jpg"
-    alt="PEAK Logo">
-  </div>
-
   <div class="card">
 
     <div class="mascot">
@@ -427,14 +331,6 @@ body::before{
     </div>
 
     <div class="message" id="homeText"></div>
-
-    <!-- Preview Images -->
-
-    <img class="preview"
-    src="https://i.supaimg.com/2a1ec0a4-961a-4ad4-9ec0-c13b367ba0d2/65610178-793d-4306-908c-f3341f20e95e.jpg">
-
-    <img class="preview"
-    src="https://i.supaimg.com/2a1ec0a4-961a-4ad4-9ec0-c13b367ba0d2/acf93341-7359-472e-8ca8-e7354fab6747.jpg">
 
     <button class="btn primary" onclick="start()">
       🚀 Start Food Check
@@ -481,15 +377,6 @@ body::before{
     <div class="mascot" id="mascotR">
       🌟
     </div>
-
-    <img class="preview"
-    src="https://i.supaimg.com/2a1ec0a4-961a-4ad4-9ec0-c13b367ba0d2/3d09486d-5e0b-431e-81d5-79c15d679030.jpg">
-
-    <img class="preview"
-    src="https://i.supaimg.com/2a1ec0a4-961a-4ad4-9ec0-c13b367ba0d2/45790766-9f5a-44f2-9e98-4c775d7f6400.jpg">
-
-    <img class="preview"
-    src="https://i.supaimg.com/2a1ec0a4-961a-4ad4-9ec0-c13b367ba0d2/b31ce7cf-99da-4e44-9525-1baf549b8bad.jpg">
 
     <div class="result-box" id="resultBox">
 
